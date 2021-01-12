@@ -25,3 +25,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user', 'UserController@index')->name('user');
 
 Route::post('/upload','UserController@uploadAvatar');
+
+
+Route::get('/todos','TodoController@index');
+
+Route::get('/todos/create','TodoController@create');
+
+Route::get('/todos/create','TodoController@edit');
+

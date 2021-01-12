@@ -8,11 +8,9 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<x-alert >
+    <p>Here is response from image upload</p>
+</x-alert>
 
                     {{ __('You are logged in!') }}
                 </div>
